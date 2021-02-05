@@ -1,0 +1,9 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import calendar
+
+
+mes,dia,año = input().split(" ") # nos proporcionan la fecha en ingles MM/DD/YY
+
+Dia = calendar.weekday(int(año), int(mes), int(dia))
+Semana = {0:'MONDAY',1:'TUESDAY',2:'WEDNESDAY',3:'THURSDAY',4:'FRIDAY',5:'SATURDAY',6:'SUNDAY'}
+print(Semana[Dia])

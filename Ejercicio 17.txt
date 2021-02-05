@@ -1,0 +1,9 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n = int(input())
+column = list(input().split())
+notas_column = column.index("MARKS")
+lista_notas = []
+for i in range(n):
+    infLista = list(input().split())
+    lista_notas.append(float(infLista[notas_column]))
+print(sum(lista_notas)/n)

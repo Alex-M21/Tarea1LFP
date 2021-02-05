@@ -1,0 +1,13 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from itertools import combinations
+
+palabra, num = input().split() # entradas de los vectores
+
+palabra = sorted(palabra) # ordenamos y lo guardamos en palabra
+
+conver = int(num) # convertimos en entero el numero que ingresa recodar que ingresa como String
+
+for i in range(1,conver+1): # de 1 hasta el rango +1
+    for j in combinations(palabra,i): #recorreos el arreglo y combinamos para palabra y el valor de i
+        print("".join(j)) #imprimimos el valor de j
+    

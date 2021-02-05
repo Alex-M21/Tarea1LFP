@@ -1,0 +1,8 @@
+if __name__ == '__main__':
+    n = int(input())
+    vector = []
+    vector = [n]
+    
+    for i in range(0,n):
+        a = i*i
+        print (a)

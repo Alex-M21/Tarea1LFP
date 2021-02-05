@@ -1,0 +1,14 @@
+
+def swap_case(s): # entra cadena 
+    result = "" #inicializamos la var result
+    for letras in s:
+        if letras == letras.upper(): # la clase upper convierte en MAYUS
+            result += letras.lower() # la clase lower convierte en minus
+        else:
+            result += letras.upper()
+    return result
+
+if __name__ == '__main__':
+    s = input()
+    result = swap_case(s)
+    print(result)

@@ -1,0 +1,24 @@
+import random
+import re
+import sys
+count = int(0)
+n = int(input().strip())
+par = n%2
+if n in range (2,5) and par == 0:
+    count  = count  +1
+    
+if n in range (6,20) and par == 0:
+    count = count +0
+    
+if n > 20 and par == 0:
+    count = count + 1
+    
+if n > 100:
+    
+    count = count + 0
+    
+if count == 0 or count == 2:
+    print("Weird")
+else:
+    print("Not Weird")
+    

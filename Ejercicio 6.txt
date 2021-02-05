@@ -1,0 +1,7 @@
+import numpy as np 
+
+A = np.array([0,1]) # first array
+B = np.array([2,3]) # second array
+
+print(np.inner(A,B)) #A.B
+print (np.outer(A,B))# AXB

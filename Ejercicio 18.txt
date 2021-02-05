@@ -1,0 +1,7 @@
+from itertools import product # importamos las librerias para poder usar la funcion product
+N = map(int, input().split()) #hacemos las iteraciones para N
+M = map(int, input().split()) # hacemos las iteraciones para M
+
+
+print(*product(N, M)) # imprimimos ojo aqui el aterisco indica seaparacion de tuplas 
+# sin el aterisco no funciona el programa 

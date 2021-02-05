@@ -1,0 +1,17 @@
+def is_leap(year):
+    
+    # Write your logic here
+    año  = year
+    Val_1 = año%400 # divisible dentro 400 
+    Val_2 = año%4 #divisible dentro de 4
+    Val_3 = año%100 #divisible dentro de 100
+    if Val_1 == 0:
+        return True
+    if Val_3 == 0:
+        return False
+    if Val_2 == 0:
+        return True
+    else:
+        return False
+year = int(input())
+print(is_leap(year))

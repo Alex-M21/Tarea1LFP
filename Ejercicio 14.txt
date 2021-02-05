@@ -1,0 +1,6 @@
+if __name__ == '__main__':
+    arr = sorted(map(int, input().split()), reverse=True)
+    #sorted ordena 
+    # map es la funcion iterador    
+    res = a[a.count(a[0])]
+    print(res)

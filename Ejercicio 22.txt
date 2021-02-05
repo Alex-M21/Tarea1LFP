@@ -1,0 +1,6 @@
+if __name__ == '__main__':
+    n = int(input())
+    integer_list = map(int, input().split())
+
+    new_tuple = tuple(integer_list)# save multiples items in a single var
+    print(hash(new_tuple)) # is set by default for any object.
